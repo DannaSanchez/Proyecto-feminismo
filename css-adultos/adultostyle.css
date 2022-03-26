@@ -113,6 +113,9 @@ footer {
     max-width:1500px;
     width:100%;
 }
+.ds-container-adultosypadres{
+    background-color: var(--fondo);
+}
 
 .ds-h1{
     position: relative;
@@ -180,8 +183,98 @@ footer {
 .ds-img-bcard{
     max-width: 100px;
 }
+/*Recursos adultos y padres*/
+.ds-h1-sinfloat{
+    border-radius: 5px;
+    color: white;
+    background-color: var(--rosa-oscuro);
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 5px;
+    margin: 15px 130px;
+    line-height: 37px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.barnav-recursosyjuegos{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.ds-container-barnav a{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 10px;
+    padding: 2px 10px;
+    text-decoration: none;
+    color: var(--fondo);
+    background: var(--rosa-oscuro);
+    border: 2px solid var(--rosa-oscuro);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.ds-container-barnav a:hover{
+    color: var(--rosa-oscuro);
+    background-color: var(--fondo);
+}
+.ds-barnav-interna{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    max-width:150px;
+    width: 100%;
+}
+/*primer-tema*/
+.ds-primer-recurso h2{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 5px;
+    margin: 40px 0 0 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #440042;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.ds-primer-recurso p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin:15px 20px;
+}
+.ds-container-card-recursos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    
+}.ds-card-recursos{
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    flex-basis: 32%;
+    height: 200px;
+    padding: 10px;
 
-
+}
+.ds-card-recursos h3{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
 @media screen and (min-width:750px){
     * {
         margin: 0;
@@ -251,5 +344,6 @@ footer {
 }
 }
 @media screen and (min-width:1024px) {
-    
+    .logo{
+    }
 }
