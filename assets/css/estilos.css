@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Manjari', sans-serif;
+Tipo de letra para el Logo */
+
+:root{
+    --morado-osc: #440042;
+    --morado-oscuro:#3B0057;
+    --rosa-oscuro: #A12161;
+    --rosa-claro:#C75C7E;
+    --rosa-gris:#CC99A9;
+    --rosa:#F2ACB9;
+    --fondo:#FFF8F8;
+    --amarillo:#FFCA00;
+    --naranja:#FF671B;
+    /* gradiente card background: linear-gradient(180deg, #FF7A00 0%, #F67209 0.01%, #A12161 81.35%); */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header, nav, footer {
+	background: rgb(53,1,88);
+    background: linear-gradient(90deg, rgba(53,1,88,1) 0%, rgba(106,1,128,1) 100%);
+    color: white;
+}
+
+/* Diseño de header */
+.header1 {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+	margin-right: auto;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.header1 img{
+    margin: .5rem;
+    max-width: 300px;
+    width: 20%;
+}
+
+.header1 h1 {
+    font-size: 20px;
+    font-family: 'Manjari', sans-serif;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+}
+
+.nav-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+li {
+	padding: .5rem;
+}
+
+/* Diseño de footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	padding: 0px;
+}
+
+.foot1, .foot2, .foot3 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5rem;
+    text-align: center; 
+}
+
+.foot1 img {
+    max-width: 300px;
+    width: 40%;
+}
+
+.foot3 img {
+    max-width: 500px;
+    padding: 1rem;
+    width: 60%;
+}
+
+.foot3 h4 {
+    color: var(--rosa); 
+}
+
+/* Diseño de jovenes1 */
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem .5rem;
+}
+
+.recursos-t {
+    background-color: var(--rosa-oscuro);
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: .5rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.recursos-t h1{
+    color: white;
+}
+
+.botones-t {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem .5rem;
+}
+
+.recursos-b{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5rem;
+}
+
+.recursos-b i {
+    color: var(--naranja);
+}
+
+.boton {
+    margin: 1rem;
+}
+
+.boton-espacio {
+    background-color: var(--fondo);
+    border: 2px solid var(--rosa-oscuro);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--rosa-oscuro);
+    font-size:15px;
+    font-weight: bolder;
+    padding: .5rem;
+}
+
+.boton-espacio:hover {
+    background-color: var(--rosa-oscuro);
+    color: var(--fondo);
+}
+
+.botones-contenidos {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.botones-contenidos img {
+    max-height: 100px;
+    max-width: 100px;
+    height: 70%;
+    width: 60%;
+}
+
+.contenido1 h1 {
+    background-color: var(--morado-osc);
+    color: var(--fondo);
+    margin: 1rem 0;
+    padding: 1rem .5rem;
+    text-align: center;
+    text-shadow: 1px 2px 4px black;
+}
+
+.contenido1 h2 {
+    color: var(--morado-osc);
+    font-weight: 700;
+    font-size: 20px;
+    margin: 1rem .5rem;
+    text-align: center;
+}
+
+.contenido1 p {
+    text-align: justify;
+    margin: 2rem;
+}
+
+.caja-gradiente {
+    background-color: var(--fondo);
+    border: 15px solid transparent;
+    border-image: -webkit-linear-gradient(bottom,#F77737,#A12161) 1 10;
+    border-radius: 10%;
+    margin: 2rem;
+}
+
+.caja-gradiente h3 {
+    margin: 1rem;
+    text-align: center;
+}
+
+.caja-gradiente p {
+    margin: 1rem;
+    text-align: center;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 200px; /* Adecua este valor para controlar la altura del video */
+    position: relative;
+    height: 0;
+    margin: 1rem;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position:absolute; 
+}
+
+.ir a {
+    max-width: 1000px;
+}
+
+.section1-foot{
+    background-color: var(--morado-osc);
+    height: 20px;
+}
+
+/*Resolución de medias (equipos de escritorio)*/
+@media screen and (min-width: 1024px) {
+ 
+
+}
